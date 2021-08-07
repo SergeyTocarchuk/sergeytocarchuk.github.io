@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Text Formatting Examples"
-author: "Paul Le"
+author: "Serhii T."
 categories: journal
 tags: [documentation,sample]
 image: text_formatting.jpg

@@ -4,7 +4,6 @@ title: "Mastering VS Code on macOS"
 author: "Serhii T."
 categories: journal
 tags: [editor,environment]
-image: vs-code.jpeg
 ---
 
 ## Installation

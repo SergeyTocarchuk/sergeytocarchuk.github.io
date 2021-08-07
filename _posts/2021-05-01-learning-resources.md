@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning Resources"
-author: "Paul Le"
+author: "Serhii T."
 categories: journal
 tags: [documentation,sample]
 image: spools.jpg
