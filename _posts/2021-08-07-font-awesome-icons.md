@@ -3,7 +3,7 @@ layout: post
 title: "Add Font Awesome icons to your Ruby on Rails app"
 author: "Serhii T."
 categories: journal
-tags: [documentation,sample]
+tags: [css,icons]
 image: font-awesome-icons.png
 ---
 

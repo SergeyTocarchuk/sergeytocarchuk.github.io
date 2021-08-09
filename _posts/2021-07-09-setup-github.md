@@ -1,0 +1,79 @@
+---
+layout: post
+title: "Setup Online Code Repo with GitHub"
+author: "Serhii T."
+categories: journal
+tags: [github]
+image: github_logo.jpeg
+---
+
+### Setup Github
+
+Upon download and installation in your local machine, first time setup steps are required (only one time) for your git installation:
+```
+git config --global user.name "Your name"
+git config --global user.email youremail@example.com
+```
+Replace "Your name" and youremail@example.com above with your actual name and email address which you want shown on your repos.
+
+To display git config settings, use the following command:
+```
+git config --list
+```
+
+First of all please sign-up for a [GitHub account](https://github.com/).
+
+To display your public SSH key:
+```
+cat ~/.ssh/id_rsa.pub
+```
+If you don't have an SSH public key or are not sure, checkout the instructions [here]( https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys)
+
+### Push to Repositary
+
+When creating a GitHub repo for your application, you can click on the SSH button, then push existing repo:
+```
+git remote add origin git@github.com:yourgithubaccountname.git
+```
+To view remotes setup in your environment (from your app directory):
+```
+git remote -v
+```
+To check current state of file updates with already tracked/committed code in repo, check git status with the following command:
+```
+git status
+```
+To add/track all files, use the following command:
+```
+git add -A
+```
+To commit changes/updates/additions to repository, use the following command:
+```
+git commit -m "A useful message to help remember details of commit"
+```
+To push changes/updates/additions to repository use this command (remember you only need use it the first time):
+```
+git push -u origin master
+```
+For future pushes to repository:
+```
+git push origin master
+```
+To reject latest changes, you can use the following command:
+```
+git checkout -f
+```
+
+### Some useful git commands:
+
+Your rails application already comes initialized with a Git repository. But if you have to initialize a git repository for an application you are working on, you can use the following command (do this from within the application directory):
+```
+git init
+```
+Note: if using Rails 5 or above, your application will already come with a git repository initiated, if you initiate a new one, it'll simply do the same step again.
+
+### Some useful resources:
+
+[Free online Pro Git book](https://git-scm.com/book/en/v2)
+
+[Reference manual](https://git-scm.com/docs)
