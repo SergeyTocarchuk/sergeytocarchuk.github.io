@@ -44,3 +44,21 @@ Now you can add icons to your project:
   <i class="fab fa-google"></i>
 </a>
 ```
+
+### Errors
+
+If you face the following error, you need to install font-awesome-sass:
+```
+File to import not found or unreadable: font-awesome-sprockets
+```
+
+In your Gemfile include:
+```
+In your Gemfile include:
+```
+and run as usual:
+```
+bundle install
+```
+For more details visit [FortAwesome/font-awesome-sass](https://github.com/FortAwesome/font-awesome-sass) at GitHub.
+
