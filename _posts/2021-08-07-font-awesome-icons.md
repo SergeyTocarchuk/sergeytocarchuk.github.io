@@ -56,7 +56,7 @@ In your Gemfile include:
 ```
 In your Gemfile include:
 ```
-and run as usual:
+gem 'font-awesome-sass', '~> 5.15.1'
 ```
 bundle install
 ```
