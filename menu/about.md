@@ -37,3 +37,54 @@ And yet I'm paid an above-average salary in the US. I have skills relevant to my
 ### Tech Skills you Need
 
 - Start a blog;
+- HTML & CSS
+- Git, Shell, Browser
+- SQL
+- Javascript
+- Ruby
+- Ruby on Rails theory
+- Ruby on Rails practice
+- Ruby On Rails level-up
+- Algorithms and Data Structures
+
+The goal of this list is to give you the tools to build a website. That's it. All you need to do is learn how to build things. So when you read, learn, and practice, don't worry if you don't understand something, or if there is more to read and learn (hint: there always will be). All you need is to understand items in that list, be comfortable with each language, tool to the point that you can work with it. You don't have to know everything about everything perfectly, but you need to be able to work, search and ask good questions. And with practice, you'll get better and better.
+
+The links that I provide below are here to get you started. It should be enough information to achieve the objective. But keep in mind that can simply google most of this and maybe even better resources. If some resource doesn't work for you, feel free to use another one or find something else. You can find free courses on youtube, for example, for any of these topics. If you want to buy a course - it's your show, but there is an abundance of free material out there, just look. If you decide to study according to this list, I encourage you to read this whole page, and go into each link and click around, see what' out there, some of these platforms, like [MDN](https://developer.mozilla.org/ru/), [RailsBridge](http://railsbridge.org/), [Upcase](https://thoughtbot.com/upcase/) offer many courses, articles, books and you can find them helpful. For example, RailsBridge has links to HTML, CSS, Javascript, Ruby, and Ruby on Rails. Check them out - maybe you'll like some of it.
+
+Before we go there: **Start a blog.** Every day write down something you learned. This serves few purposes.
+
+#### First, helps to land a job
+When you're looking for your first junior job you won't have any experience to put on your resume, so your resume will look weak. For the interviewer it's very difficult to assess your skill set, having a blog will help here tremendously. How do they know you didn't just start yesterday? Well, they can see your posts from 6 months ago and can notice the progression from the very first "hello world" to "Here's how I avoid n+1 queries".
+
+#### Second, it gives your thoughts a structure
+There are few levels to understanding something:
+- I think I understand
+- I can write it down
+- I can explain it to somebody else.
+
+While you think you understand something, trying to put it on paper can be difficult. That's because thoughts are unorganized and chaotic. But paper... it's unforgiving, you can't mumble on paper. The pain you feel when you try to write - that's growing, that's structure emerging.
+
+#### Last but not least, it's helpful to store information.
+Sometimes down the line, you will have a problem and you'll be happy you can just open your blog, find the snippet, and copy-paste it.
+
+Do write the blog. It's like an investment. It doesn't help you now and you limit yourself, but it pays off later. Keep in mind that your entries don't need to be 'smart' or groundbreaking, or even interesting. They can (and maybe even should) be the simplest, dumbest, most boring, straight-up stolen entries one can possibly come up with and that's ok. If you got stuck on something dumb for few hours make a note of it. If you learned some simple method that is obvious to you now but wasn't 5 minutes ago - make a note of it - you will be happy to have all this saved up when applying for a job.
+
+### **HTML & CSS** (1-2 weeks)
+
+Objective
+Build some simple static pages, as in [here](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects).
+
+Details
+I think you can go over everything there is to know about HTML in one day, but let's say it will take few days. The same goes for CSS. Then take few days, up to few weeks to practice it.
+
+Things you see in the browser, a.k.a websites, basically boil down to HTML & CSS. Just with these 2 you can build some fairly pretty and useful(!) static pages, websites. These aren't programming languages.
+
+- HTML - hypertext markup language - tells browser WHAT to display;
+- CSS - cascading style sheets - tells browser HOW to display it.
+
+These are among the easiest to learn, concepts are straightforward. You don't need to remember/learn all the tags. Most commonly used will land in your head by themselves. everything else you should know how to find. There are a million resources online to learn this. From the list of links pick one (or 2) or find one online you like better and learn it.
+
+### Browser, Git, Shell (1-2 weeks)
+
+
+
