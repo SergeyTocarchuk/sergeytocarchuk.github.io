@@ -9,7 +9,7 @@ image:
 
 Hi!
 
-Rewrite algorithm of revising array:
+Rewrite algorithm of reversed array: itterate with _for loop_ and concatenate each element to empty array.
 ```
 var reversed = function(nums) {
   let revNums = [];
