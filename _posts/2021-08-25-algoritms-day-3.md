@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Algorithms: Day "
+title: "Algorithms: Day 3"
 author: "Serhii T."
 categories: journal
 tags: [algorithms,js]
