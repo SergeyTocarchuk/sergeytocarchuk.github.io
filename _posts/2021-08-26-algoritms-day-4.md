@@ -25,3 +25,21 @@ var countUniqueValues = function(arr) {
 ```
 
 Have to dive into Time and Space Complexity. 
+
+_Multiple pointers_ pattern helps me to solve the following problem: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/).
+```
+var maxProfit = function(prices) {
+  let minValue = prices[0];
+  let maxProfit = 0;
+  for (let i = 1; i < prices.length; i++) {
+    if(minValue > prices[i]) {
+      minValue = prices[i];
+    } else {
+      if (prices[i] - minValue > maxProfit) {
+        maxProfit = prices[i] - minValue;    
+      }
+    }
+  }
+  return maxProfit;
+};
+```
