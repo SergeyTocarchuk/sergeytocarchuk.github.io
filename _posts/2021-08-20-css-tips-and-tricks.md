@@ -12,7 +12,7 @@ Here we will talk about:
 - Layout (e.g. display)
 - Document Flow and Positioning (e.g. position, top, left, etc.)
 
-### The Box Model
+### THE BOX MODEL
 
 When you consider the size of an element (i.e. its height and width), there are two different models by which to measure this and you can adjust this with the box-sizing property:
 - _box-sizing: content-box_ (browser default)
