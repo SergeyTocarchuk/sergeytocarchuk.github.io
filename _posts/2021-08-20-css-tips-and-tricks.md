@@ -53,3 +53,26 @@ The position property affects how elements are positioned with respect to the fl
 - _position: absolute_ takes the element out of the flow of the document and ancestors/siblings will be laid out as if the element were not present. Positioning properties specify offsets of where the element should be visually laid out relative to the nearest non-static parent. You can add _position: relative_ to an ancestor to use it as the anchor point for an element with position: absolute.
 - _position: fixed_ along with positioning properties means that the element is removed from the normal flow of the document and instead laid out relative to the viewport. If positioning properties are specified, they will ensure the element is laid out always with that offset to the viewport (i.e. they appear fixed in place and don’t move, even when scrolling).
 - _position: sticky_ is a bit more complex, but you can think about it as a hybrid of position: relative and position: fixed. You can read more about the exact mechanism at [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky).
+
+### CSS CUSTOM PROPERTIES (vars)
+
+Sometimes we need some CSS values to be used in multiple locations or elements. These values can be reused throughout the document or on the entire web project. One common example is a brand color of a website. Say it is #120078. Now we need this to be applied to our link tags, buttons, ad containers, etc. Now multiple pages will have the same value across.
+
+So to not use it each time and make it easier to find a specific fixed value, we use CSS Custom Properties. Here’s a quick example to showcase the situation:
+```
+:root {
+  --brand-bg-color: #120078;
+}
+
+a  {
+  color: white;
+  background-color: var(--brand-bg-color);
+}
+
+.main-link {
+  color: var(--brand-bg-color);
+  padding: 3px;
+}
+```
+
+The _--brand-bg-color_ is our CSS variable here defined at the root of the project styles. What this means is that whenever we need this specific color in any of our links, buttons, etc, we can simply use it as var(--brand-bg-color)instead of manually defining it everywhere. It helps a lot when we want to change the color. We simply update the value of --brand-bg-color and it reflects on every element it is used!
