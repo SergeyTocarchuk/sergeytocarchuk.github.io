@@ -29,8 +29,8 @@ Values:
 Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
 
 Values:
-- <track-size> – can be a length, a percentage, or a fraction of the free space in the grid (using the fr unit)
-- <line-name> – an arbitrary name of your choosing
+- track-size – can be a length, a percentage, or a fraction of the free space in the grid (using the fr unit)
+- line-name – an arbitrary name of your choosing.
 ```
 .container {
   grid-template-columns: ...  ...;
@@ -62,7 +62,7 @@ Values:
 Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
 
 Values:
-- <grid-area-name> – the name of a grid area specified with grid-area
+- grid-area-name – the name of a grid area specified with grid-area
 - . – a period signifies an empty grid cell
 - none – no grid areas are defined
 
@@ -99,18 +99,18 @@ A shorthand for setting grid-template-rows, grid-template-columns, and grid-temp
 
 Values:
 - none – sets all three properties to their initial values.
-- <grid-template-rows> / <grid-template-columns> – sets grid-template-columns and grid-template-rows to the specified values, respectively, and sets grid-template-areas to none.
+- grid-template-rows / grid-template-columns – sets grid-template-columns and grid-template-rows to the specified values, respectively, and sets grid-template-areas to none.
 
 #### column-gap | row-gap | grid-column-gap | grid-row-gap
 
 Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
 
 Values:
-- <line-size> – a length value.
+- line-size – a length value.
 
 A shorthand for row-gap and column-gap is **gap**.
 Values:
-- <grid-row-gap> <grid-column-gap> – length values.
+- grid-row-gap | grid-column-gap – length values.
 
 #### justify-items
 
@@ -145,7 +145,7 @@ Values:
 **place-items** sets both the _align-items_ and _justify-items_ properties in a single declaration.
 
 Values:
-- <align-items> / <justify-items> – The first value sets align-items, the second value justify-items. If the second value is omitted, the first value is assigned to both properties.
+- align-items / justify-items – The first value sets align-items, the second value justify-items. If the second value is omitted, the first value is assigned to both properties.
 
 This can be very useful for super quick multi-directional centering:
 ```
@@ -186,7 +186,7 @@ Values:
 **place-content** sets both the _align-content_ and _justify-content_ properties in a single declaration.
 
 Values:
-- <align-content> / <justify-content> – The first value sets align-content, the second value justify-content. If the second value is omitted, the first value is assigned to both properties.
+- align-content / justify-content – The first value sets align-content, the second value justify-content. If the second value is omitted, the first value is assigned to both properties.
 
 #### grid
 
@@ -194,9 +194,9 @@ A shorthand for setting all of the following properties in a single declaration:
 
 Values:
 - none – sets all sub-properties to their initial values.
-- <grid-template> – works the same as the grid-template shorthand.
-- <grid-template-rows> / [ auto-flow && dense? ] <grid-auto-columns>? – sets grid-template-rows to the specified value. If the auto-flow keyword is to the right of the slash, it sets grid-auto-flow to column. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-columns is omitted, it is set to auto.
-- [ auto-flow && dense? ] <grid-auto-rows>? / <grid-template-columns> – sets grid-template-columns to the specified value. If the auto-flow keyword is to the left of the slash, it sets grid-auto-flow to row. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-rows is omitted, it is set to auto.
+- grid-template – works the same as the grid-template shorthand.
+- grid-template-rows / [ auto-flow && dense? ] grid-auto-columns? – sets grid-template-rows to the specified value. If the auto-flow keyword is to the right of the slash, it sets grid-auto-flow to column. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-columns is omitted, it is set to auto.
+- [ auto-flow && dense? ] grid-auto-rows? / grid-template-columns – sets grid-template-columns to the specified value. If the auto-flow keyword is to the left of the slash, it sets grid-auto-flow to row. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-rows is omitted, it is set to auto.
 
 The following two code blocks are equivalent:
 ```
@@ -217,9 +217,9 @@ The following two code blocks are equivalent:
 Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
 
 Values:
-- <line> – can be a number to refer to a numbered grid line, or a name to refer to a named grid line
-- span <number> – the item will span across the provided number of grid tracks
-- span <name> – the item will span across until it hits the next line with the provided name
+- line – can be a number to refer to a numbered grid line, or a name to refer to a named grid line
+- span number – the item will span across the provided number of grid tracks
+- span name – the item will span across until it hits the next line with the provided name
 - auto – indicates auto-placement, an automatic span, or a default span of one.
 
 #### grid-column | grid-row
@@ -298,7 +298,7 @@ grid-template-columns:
   repeat(auto-fit, minmax(250px, 1fr));
 ```
 
-The difference between the keywords is spelled out in detail [here]().
+The difference between the keywords is spelled out in detail [here](https://sergeytocarchuk.github.io/css-grid-auto-fill-vs-auto-fit).
 
 ### Resources:
 - learning Grid Properties has been gamified in [GRID GARDEN](https://cssgridgarden.com/#ru)
