@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Algorithms Day 11: Sorting"
+title: "Algorithms Day 11: Bubble Sorting"
 author: "Serhii T."
 categories: journal
 tags: [algorithms,js,swap,bubble]
