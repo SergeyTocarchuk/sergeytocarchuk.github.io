@@ -23,22 +23,47 @@ function search(arr, num) {
 
 And here is solution with Divide and Conquer Pattern:
 ```
-function search(arr, num) {
-  let min = 0;
-  let max = arr.length - 1;
+function binarySearch(arr, num) {
+  var left = 0;
+  var right = arr.length - 1;
+  var middle = Math.floor((left + right) / 2);
 
-  while (min <= max) {
-    let middle = Math.floor((min + max) / 2);
-    let currentEl = arr[middle];
-
-    if (arr[middle] < num) {
-      min = middle + 1;
-    } else if (arr[middle] > num) {
-      max = middle - 1;
-    } else {
-      return middle;
-    }
+  if(arr[left] == num) {
+    return left;
   }
-  return -1;
+
+  while(arr[middle] !== num && left <= right) {
+    if(num < arr[middle]) {
+      right = middle - 1;
+    } else {
+      left = middle + 1;
+    }
+    middle = Math.floor((left + right) / 2);
+  }
+  if(arr[middle] === num) {
+    return middle;
+  }
+  return -1; 
+};
+```
+
+Shorter version of the code provided above:
+```
+function binarySearch(arr, num) {
+  var left = 0;
+  var right = arr.length - 1;
+  var middle = Math.floor((left + right) / 2);
+
+  if(arr[left] == num) {
+    return left;
+  }
+
+  while(arr[middle] !== num && left <= right) {
+    if(num < arr[middle]) right = middle - 1; 
+    else left = middle + 1;
+    middle = Math.floor((left + right) / 2);
+  }
+
+  return arr[middle] === num ? middle : -1; 
 };
 ```

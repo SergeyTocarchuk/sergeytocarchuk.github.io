@@ -192,12 +192,6 @@ Values:
 
 A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow (Note: You can only specify the explicit or the implicit grid properties in a single grid declaration).
 
-Values:
-- none – sets all sub-properties to their initial values.
-- grid-template – works the same as the grid-template shorthand.
-- grid-template-rows / [ auto-flow && dense? ] grid-auto-columns? – sets grid-template-rows to the specified value. If the auto-flow keyword is to the right of the slash, it sets grid-auto-flow to column. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-columns is omitted, it is set to auto.
-- [ auto-flow && dense? ] grid-auto-rows? / grid-template-columns – sets grid-template-columns to the specified value. If the auto-flow keyword is to the left of the slash, it sets grid-auto-flow to row. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-rows is omitted, it is set to auto.
-
 The following two code blocks are equivalent:
 ```
 .container {
