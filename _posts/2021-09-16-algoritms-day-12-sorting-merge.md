@@ -87,3 +87,44 @@ function quickSort(arr, left = 0, right = arr.length - 1){
 
 quickSort([10,24,76,73,12,4387,23,34,45,1,20]);
 ```
+
+Radix sort based on sorting elements into buskets according to their k-digits.
+```
+//find place of digit in num
+function getDigit(num, i){
+  return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
+}
+
+//how many digits in num
+function digitCount(num){
+  if( num === 0 ) return 1;
+  return Math.floor(Math.log10(Math.abs(num))) + 1;
+}
+
+//find the largest number of digits in num
+function mostDigits(nums){
+  let maxDigits = 0;
+  for( let i = 0; i < nums.length; i++ ){
+    maxDigits = Math.max(maxDigits, digitCount(nums[i]));
+  }
+  return maxDigits;
+}
+
+function radixSort(arr){
+  let maxDigitCount = mostDigits(arr);
+  for( let k = 0; k < maxDigitCount; k++ ){
+    //create 10 empty arrays (buckets)
+    let digitBuckets = Array.from({length: 10}, () => [] );
+    for( let i =0; i < nums.length; i++ ){
+      let digit = getDigit(nums[i],k);
+      digitBuckets[digit].push(nums[i]);
+    }
+    //recollect all nums from buckets in array. Spread operator '...' allow to collect arrays as elements into our array 
+    nums = [].concat(...digitBuckets);
+  }
+
+  return arr
+}
+
+radixSort([23,567,18276,2,-1,34,67,7,33,21,9,99]);
+```
