@@ -10,6 +10,7 @@ image:
 Since yesterday I worked on Rock Paper Scissors Game:
 - there is no interface;
 - you play with computer, so here is the fist function **computerPlay** that makes a random choice for computer:
+
 ```
 //function will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’
 function computerPlay(){
@@ -23,7 +24,9 @@ function computerPlay(){
   }
 };
 ```
+
 - trying to divide a task into several small problems first I found all possible combinations in the game:
+
 ```
 // All possible combinations
 // rock vs paper
@@ -33,7 +36,9 @@ function computerPlay(){
 // scissors vs rock
 // scissors vs paper
 ```
-- then write a function that plays a single round with all possible combinations mantioned above:
+
+- then write a function that plays a single round with all possible combinations mentioned above:
+
 ```
 function playRound(playerSelection, computerSelection){
   if( playerSelection === 'rock' && computerSelection === 'scissors' ){
@@ -54,7 +59,9 @@ function playRound(playerSelection, computerSelection){
   }
 };
 ```
+
 - new function for playing 3 rounds in a row. Use previous functions inside, _while_ loop and variables for keeping score of every player, [prompt function](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) to receive input from user:
+
 ```
 // game function
 function game(){
