@@ -76,3 +76,8 @@ a  {
 ```
 
 The _--brand-bg-color_ is our CSS variable here defined at the root of the project styles. What this means is that whenever we need this specific color in any of our links, buttons, etc, we can simply use it as var(--brand-bg-color)instead of manually defining it everywhere. It helps a lot when we want to change the color. We simply update the value of --brand-bg-color and it reflects on every element it is used!
+
+### CSS MEDIA QUERIES
+
+Resources:
+- [Learn CSS Media Queries by Building Three Projects](https://www.freecodecamp.org/news/learn-css-media-queries-by-building-projects/)
