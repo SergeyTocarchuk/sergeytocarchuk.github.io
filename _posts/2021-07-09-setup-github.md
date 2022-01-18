@@ -86,31 +86,25 @@ git checkout -f
 
 ### Branches
 
-To make a new branch and switch to it with the command: 
+- to make a new branch and switch to it with the command: 
 ```
 git checkout -b branchName
 ```
 
-To check list of branches:
+- to check list of branches run _git branch_
+
+- commit all your changes to your feature-branch.
+
+- if you don't want to push changes to feature-branch, switch to your main (master) branch:
 ```
-git branch
+git checkout main (or master)
 ```
 
-To switch to another branch:
-```
-git checkout branchName
-```
-
-To push to another branch:
-```
-git push origin branchName
-```
-
-To merge changes back to our _main_ branch:
-- first switch to the branch we want to merge INTO (_main_ or _master_) and then run command:
+- merge changes to our _main_ branch (first switch to the branch you want to merge INTO (_main_ or _master_):
 ```
 git merge branchName
 ```
+
 Push your changes to remote repo and that's it!
 
 To delete the branch:

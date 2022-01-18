@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Serching Functionality with Scopes"
+title: "Searching Functionality with Scopes"
 author: "Serhii T."
 categories: journal
 tags: [scope,search]
