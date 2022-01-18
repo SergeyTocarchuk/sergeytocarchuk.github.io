@@ -3,7 +3,7 @@ layout: post
 title: "Namespacing Concept for Routes"
 author: "Serhii T."
 categories: journal
-tags: [rails, routes, namespace]
+tags: [rails,routes,namespace]
 image: 
 ---
 
