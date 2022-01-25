@@ -118,12 +118,6 @@ git push --delete origin branchName
 
 ### Some useful git commands:
 
-Your rails application already comes initialized with a Git repository. But if you have to initialize a git repository for an application you are working on, you can use the following command (do this from within the application directory):
-```
-git init
-```
-Note: if using Rails 5 or above, your application will already come with a git repository initiated, if you initiate a new one, it'll simply do the same step again.
-
 If you'd like to see all the commits you've made:
 ```
 git log
