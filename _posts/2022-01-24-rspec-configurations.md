@@ -9,7 +9,7 @@ image:
 
 - Add RSpec and other useful gems to your Gemfile, and install with Bundler
 ```
-# my_app/Gemfile
+my_app/Gemfile
 
 group :development, :test do
   gem 'rspec-rails'
