@@ -8,15 +8,14 @@ image:
 ---
 
 - Add RSpec and other useful gems to your Gemfile, and install with Bundler
+
 ```
 my_app/Gemfile
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
 end
-
 group :test do
   gem 'faker'
   gem 'capybara'
@@ -31,6 +30,7 @@ If you are using postgresql, you must run _rails db:create_ on the command line 
 - Configure RSpec
 Run _rails g rspec:install_.
 To tweak the default RSpec configuration so that it will format its output in a readable way. To do this, make your .rspec configuration file look like this:
+
 ```
 --color
 --require spec_helper
@@ -39,9 +39,9 @@ To tweak the default RSpec configuration so that it will format its output in a 
 
 - Configure the Rails Application to generate test files automatically as features are added
 Open config/application.rb and add the following code inside the Application class:
-```
-# my_app/config/application.rb
 
+```
+my_app/config/application.rb
 config.generators do |g|
   g.test_framework :rspec,
     :fixtures => false,
