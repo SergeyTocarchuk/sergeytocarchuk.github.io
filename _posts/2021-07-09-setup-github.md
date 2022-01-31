@@ -116,11 +116,33 @@ git branch -d branchName
 git push --delete origin branchName
 ```
 
+### Update local branch from remote one
+
+```
+git fetch
+```
+
+- Git gathers any commits from the remote branch that do not exist in your current branch and stores them in your local repository. However, it does not merge them with your current branch. This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. 
+- To integrate the commits into your current branch, you must run _git merge_ afterwards.
+
+Shorthand for _git fetch_ and _git merge_ is:
+
+```
+git pull
+```
+
+- Git tries to automatically merge. It automatically merges the commits without letting you review them first. If you don’t carefully manage your branches, you may run into frequent conflicts.
+
 ### Some useful git commands:
 
-If you'd like to see all the commits you've made:
+- If you'd like to see all the commits you've made:
 ```
 git log
+```
+
+- Stash the changes in a dirty working directory away
+```
+git stash
 ```
 
 ### Some useful resources:
